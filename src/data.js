@@ -41,12 +41,23 @@ export const SERVICES = [
   },
 ];
 
+export const SHOWREEL_ITEMS = [
+  {
+    title: 'Love & Death (HBO) – Opening Theme Reimagined',
+    videoId: '-GBFX-vLZF0',
+  },
+  {
+    title: 'Dark Techno Rave in a Thunderstorm 🌧️⚡ | 15 MIN Ambient House Journey',
+    videoId: 'LF9T_M2rTg0',
+  },
+];
+
 export const PROJECTS = [
   {
     title: 'Rediseñé este comercial de YPF 🇦🇷 ⭐',
     description:
       'En este proyecto realicé un rediseño sonoro de un comercial de YPF, creando una banda sonora original y un nuevo diseño de sonido con un enfoque cinematográfico. 🎧',
-    videoId: 'nCxiYW-JP6E',
+    videoId: '6JJrWB3jm8c',
   },
   {
     title: 'Sound Design of: Memories of the meadow FINAL scene',
@@ -88,6 +99,7 @@ export const NAV_LINKS = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'services', label: 'Services' },
+  { id: 'showreel', label: 'Showreel' },
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ];

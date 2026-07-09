@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Play, X } from 'lucide-react';
+import { useState } from 'react';
+import { Play } from 'lucide-react';
 import Reveal from './Reveal.jsx';
+import VideoModal from './VideoModal.jsx';
 import { PROJECTS } from '../data.js';
 
 function ProjectCard({ project, delay, onPlay }) {
@@ -31,40 +32,6 @@ function ProjectCard({ project, delay, onPlay }) {
   );
 }
 
-function VideoModal({ project, onClose }) {
-  useEffect(() => {
-    if (!project) return;
-    function onKey(e) {
-      if (e.key === 'Escape') onClose();
-    }
-    document.addEventListener('keydown', onKey);
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
-    };
-  }, [project, onClose]);
-
-  if (!project) return null;
-
-  return (
-    <div className="video-modal-backdrop" onClick={onClose}>
-      <div className="video-modal-frame" onClick={(e) => e.stopPropagation()}>
-        <button className="video-modal-close" onClick={onClose} aria-label="Close video">
-          <X size={20} />
-        </button>
-        <iframe
-          className="w-full h-full"
-          src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1`}
-          title={project.title}
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
-    </div>
-  );
-}
-
 export default function SelectedProjects() {
   const [activeProject, setActiveProject] = useState(null);
 
@@ -83,7 +50,7 @@ export default function SelectedProjects() {
         </div>
       </div>
 
-      <VideoModal project={activeProject} onClose={() => setActiveProject(null)} />
+      <VideoModal item={activeProject} onClose={() => setActiveProject(null)} />
     </section>
   );
 }
