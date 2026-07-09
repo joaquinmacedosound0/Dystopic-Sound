@@ -13,11 +13,11 @@ export const BRAND = {
 };
 
 export const SOCIAL_LINKS = [
-  { label: 'Email', href: 'mailto:hello@dystopicsound.com', icon: Mail },
-  { label: 'LinkedIn', href: '#', icon: Linkedin },
-  { label: 'Upwork', href: '#', icon: Briefcase },
-  { label: 'Fiverr', href: '#', icon: ShoppingBag },
-  { label: 'YouTube', href: '#', icon: Youtube },
+  { label: 'Email', href: 'mailto:joaquinmacedosound@gmail.com', icon: Mail },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/joaquin-macedo', icon: Linkedin },
+  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~016bd23a05bf52c2a9?mp_source=share', icon: Briefcase },
+  { label: 'Fiverr', href: 'https://www.fiverr.com/s/5rwyAq1', icon: ShoppingBag },
+  { label: 'YouTube', href: 'https://www.youtube.com/@Joaquin-macedo', icon: Youtube },
 ];
 
 export const SERVICES = [
@@ -43,24 +43,25 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
+    title: 'Rediseñé este comercial de YPF 🇦🇷 ⭐',
+    description:
+      'En este proyecto realicé un rediseño sonoro de un comercial de YPF, creando una banda sonora original y un nuevo diseño de sonido con un enfoque cinematográfico. 🎧',
+    videoId: 'nCxiYW-JP6E',
+  },
+  {
     title: 'Sound Design of: Memories of the meadow FINAL scene',
+    description: 'Sound design from scratch for a movie scene, hired by a Fiverr client.',
+    videoId: 'r2koubwVPsE',
+  },
+  {
+    title: 'Cinematic Soundtrack for Nature Documentary',
     description: 'Original score and immersive sound design for a feature-length nature documentary.',
-    href: '#',
+    videoId: 'E0TEhztH3SI',
   },
   {
-    title: 'Football Hard Techno Project',
-    description: 'High-energy hard techno production built for sports branding and promo content.',
-    href: '#',
-  },
-  {
-    title: 'Short Film Sound Design',
-    description: 'Complete sound design and final mix for an award-submitted short film.',
-    href: '#',
-  },
-  {
-    title: 'Game Audio Demo',
-    description: 'Adaptive music and interactive sound design built for an indie game demo.',
-    href: '#',
+    title: 'Predator Fight Scene – Cinematic Sound Design & Original Score',
+    description: 'Original sound design and custom soundtrack created for a fight scene from Predator: Killers of Killers.',
+    videoId: '2oSYDUcXkDo',
   },
 ];
 
