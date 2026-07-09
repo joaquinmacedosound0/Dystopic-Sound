@@ -1,8 +1,8 @@
 import Reveal from './Reveal.jsx';
-import { SERVICES } from '../data.js';
+import { SERVICE_ICONS } from '../data.js';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 
-function ServiceCard({ service, delay }) {
-  const Icon = service.icon;
+function ServiceCard({ icon: Icon, service, delay }) {
   return (
     <Reveal delay={delay} className="h-full">
       <div className="service-card h-full">
@@ -25,17 +25,19 @@ function ServiceCard({ service, delay }) {
 }
 
 export default function Services() {
+  const { t } = useLanguage();
+
   return (
     <section id="services" className="relative py-28 md:py-36 px-6 section-void">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-16">
-          <p className="eyebrow mb-4">What We Do</p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl">Our Services</h2>
+          <p className="eyebrow mb-4">{t.services.eyebrow}</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl">{t.services.heading}</h2>
         </Reveal>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {SERVICES.map((service, i) => (
-            <ServiceCard key={service.title} service={service} delay={i * 120} />
+          {t.services.items.map((service, i) => (
+            <ServiceCard key={service.title} icon={SERVICE_ICONS[i]} service={service} delay={i * 120} />
           ))}
         </div>
       </div>

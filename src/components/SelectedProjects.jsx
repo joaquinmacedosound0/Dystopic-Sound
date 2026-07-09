@@ -3,8 +3,9 @@ import { Play } from 'lucide-react';
 import Reveal from './Reveal.jsx';
 import VideoModal from './VideoModal.jsx';
 import { PROJECTS } from '../data.js';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 
-function ProjectCard({ project, delay, onPlay }) {
+function ProjectCard({ project, delay, onPlay, watchLabel }) {
   return (
     <Reveal delay={delay}>
       <button onClick={() => onPlay(project)} className="project-card block w-full text-left">
@@ -24,7 +25,7 @@ function ProjectCard({ project, delay, onPlay }) {
           <p className="font-body text-stone text-sm leading-relaxed mb-4">{project.description}</p>
           <span className="inline-flex items-center gap-2 font-body text-sm accent-text">
             <Play size={14} strokeWidth={1.5} />
-            Watch Video
+            {watchLabel}
           </span>
         </div>
       </button>
@@ -34,18 +35,31 @@ function ProjectCard({ project, delay, onPlay }) {
 
 export default function SelectedProjects() {
   const [activeProject, setActiveProject] = useState(null);
+  const { t } = useLanguage();
+
+  const projects = PROJECTS.map((data, i) => ({
+    ...data,
+    title: t.projects.items[i].title,
+    description: t.projects.items[i].description,
+  }));
 
   return (
     <section id="projects" className="relative py-28 md:py-36 px-6 section-void">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-16">
-          <p className="eyebrow mb-4">Selected Projects</p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl">Featured Work</h2>
+          <p className="eyebrow mb-4">{t.projects.eyebrow}</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl">{t.projects.heading}</h2>
         </Reveal>
 
         <div className="grid sm:grid-cols-2 gap-8 md:gap-10">
-          {PROJECTS.map((project, i) => (
-            <ProjectCard key={project.title} project={project} delay={i * 100} onPlay={setActiveProject} />
+          {projects.map((project, i) => (
+            <ProjectCard
+              key={project.videoId}
+              project={project}
+              delay={i * 100}
+              onPlay={setActiveProject}
+              watchLabel={t.projects.watchVideo}
+            />
           ))}
         </div>
       </div>

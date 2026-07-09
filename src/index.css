@@ -151,6 +151,34 @@ section[id] {
   border-bottom: 1px solid rgba(79, 138, 107, 0.15);
 }
 
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid rgba(79, 138, 107, 0.25);
+  border-radius: 9999px;
+  padding: 3px;
+}
+.lang-pill {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--c-stone-dim);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.lang-pill:hover { color: var(--c-cream); }
+.lang-pill-active {
+  background: var(--c-accent);
+  color: var(--c-void);
+}
+.lang-pill-active:hover { color: var(--c-void); }
+
 .btn-primary {
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;

@@ -1,18 +1,21 @@
 import Reveal from './Reveal.jsx';
 import { SOCIAL_LINKS } from '../data.js';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section id="contact" className="relative py-28 md:py-40 px-6 section-void overflow-hidden">
       <div className="hero-blob hero-blob-3" />
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <Reveal>
-          <p className="eyebrow mb-5">Contact</p>
+          <p className="eyebrow mb-5">{t.contact.eyebrow}</p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl mb-6 leading-tight">
-            Let's Create Something Unforgettable.
+            {t.contact.heading}
           </h2>
           <p className="font-body text-stone text-base md:text-lg mb-14 max-w-xl mx-auto">
-            Have a project in mind? Let's talk about the sound of your next story.
+            {t.contact.subtitle}
           </p>
         </Reveal>
 

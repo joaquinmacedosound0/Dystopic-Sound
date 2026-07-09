@@ -1,10 +1,34 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NAV_LINKS, scrollToId } from '../data.js';
+import { NAV_IDS, scrollToId } from '../data.js';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
+
+function LanguageSwitch({ className = '' }) {
+  const { lang, setLang } = useLanguage();
+  return (
+    <div className={`lang-switch ${className}`} role="group" aria-label="Language selector">
+      <button
+        onClick={() => setLang('en')}
+        className={`lang-pill ${lang === 'en' ? 'lang-pill-active' : ''}`}
+        aria-pressed={lang === 'en'}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => setLang('es')}
+        className={`lang-pill ${lang === 'es' ? 'lang-pill-active' : ''}`}
+        aria-pressed={lang === 'es'}
+      >
+        ES
+      </button>
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     function onScroll() {
@@ -31,11 +55,15 @@ export default function Navbar() {
         </button>
 
         <div className="hidden md:flex items-center gap-10">
-          {NAV_LINKS.map((link) => (
-            <button key={link.id} onClick={() => handleNavClick(link.id)} className="nav-link font-body text-sm">
-              {link.label}
+          {NAV_IDS.map((id) => (
+            <button key={id} onClick={() => handleNavClick(id)} className="nav-link font-body text-sm">
+              {t.nav[id]}
             </button>
           ))}
+        </div>
+
+        <div className="hidden md:block">
+          <LanguageSwitch />
         </div>
 
         <button className="md:hidden" onClick={() => setMenuOpen((o) => !o)} aria-label="Toggle menu">
@@ -45,15 +73,16 @@ export default function Navbar() {
 
       {menuOpen && (
         <div className="md:hidden mobile-menu px-6 pb-8 flex flex-col gap-6">
-          {NAV_LINKS.map((link) => (
+          {NAV_IDS.map((id) => (
             <button
-              key={link.id}
-              onClick={() => handleNavClick(link.id)}
+              key={id}
+              onClick={() => handleNavClick(id)}
               className="nav-link font-body text-left text-lg"
             >
-              {link.label}
+              {t.nav[id]}
             </button>
           ))}
+          <LanguageSwitch className="mt-2" />
         </div>
       )}
     </nav>

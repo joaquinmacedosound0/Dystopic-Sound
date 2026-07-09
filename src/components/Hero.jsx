@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Disc3, ChevronDown } from 'lucide-react';
-import { BRAND, scrollToId } from '../data.js';
+import { scrollToId } from '../data.js';
+import { useLanguage } from '../i18n/LanguageContext.jsx';
 import ParticleField from './ParticleField.jsx';
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 150);
@@ -32,19 +34,19 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-heading font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
-          {BRAND.tagline}
+          {t.brand.tagline}
         </h1>
 
         <p className="font-subheading italic text-lg md:text-xl text-stone max-w-2xl mb-10">
-          {BRAND.subtitle}
+          {t.brand.subtitle}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-5">
           <button onClick={() => scrollToId('projects')} className="btn-primary">
-            View Our Work
+            {t.brand.ctaPrimary}
           </button>
           <button onClick={() => scrollToId('contact')} className="btn-secondary">
-            Work With Us
+            {t.brand.ctaSecondary}
           </button>
         </div>
       </div>
