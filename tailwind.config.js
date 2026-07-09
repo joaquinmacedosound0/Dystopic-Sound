@@ -1,23 +1,23 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
-  theme: {
-    extend: {
-      colors: {
-        void: '#090909',
-        abyss: '#101714',
-        forest: '#1B352A',
-        accent: '#4F8A6B',
-        cream: '#EDEAE3',
-        stone: '#B7C0BA',
-        'stone-dim': '#7C8985',
-      },
-      fontFamily: {
-        heading: ['Cinzel', 'serif'],
-        subheading: ['Cormorant Garamond', 'serif'],
-        body: ['Inter', 'sans-serif'],
-      },
-    },
+{
+  "name": "dystopic-sound",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  plugins: [],
-};
+  "dependencies": {
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}
