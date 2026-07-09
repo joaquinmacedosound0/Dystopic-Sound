@@ -43,7 +43,7 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    title: 'National Geographic Documentary',
+    title: 'Sound Design of: Memories of the meadow FINAL scene',
     description: 'Original score and immersive sound design for a feature-length nature documentary.',
     href: '#',
   },
