@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Briefcase, ShoppingBag, Youtube, Music, Waves, SlidersHorizontal, BookOpen, Cog, Users } from 'lucide-react';
+import { Mail, Linkedin, Youtube, Instagram, Briefcase, ShoppingBag, Music, Waves, SlidersHorizontal, BookOpen, Cog, Users } from 'lucide-react';
 
 /* =============================================================================
    Structural / non-text data — icons, links, and video IDs that don't change
@@ -8,6 +8,7 @@ import { Mail, Linkedin, Briefcase, ShoppingBag, Youtube, Music, Waves, SlidersH
 
 export const SOCIAL_LINKS = [
   { label: 'Email', href: 'mailto:joaquinmacedosound@gmail.com', icon: Mail },
+  { label: 'Instagram', href: 'https://www.instagram.com/dystopicsound/?hl=en', icon: Instagram },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/joaquin-macedo', icon: Linkedin },
   { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~016bd23a05bf52c2a9?mp_source=share', icon: Briefcase },
   { label: 'Fiverr', href: 'https://www.fiverr.com/s/5rwyAq1', icon: ShoppingBag },

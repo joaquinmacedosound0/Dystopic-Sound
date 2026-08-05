@@ -34,7 +34,11 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-heading font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
-          {t.brand.tagline}
+          {t.brand.tagline.map((line, i) => (
+            <span key={i} className="block">
+              {line}
+            </span>
+          ))}
         </h1>
 
         <p className="font-subheading italic text-lg md:text-xl text-stone max-w-2xl mb-10">
