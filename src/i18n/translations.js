@@ -63,44 +63,14 @@ export const translations = {
     projects: {
       eyebrow: 'Selected Projects',
       heading: 'Featured Work',
-      watchVideo: 'Watch Video',
       items: [
         {
-          title: 'I Redesigned This YPF Commercial 🇦🇷 ⭐',
-          description:
-            'For this project I redesigned the sound of a YPF commercial, creating an original soundtrack and new sound design with a cinematic approach. 🎧',
+          line1: 'Al Nabbash — Short Film directed by Omar Al Omeeri',
+          line2: 'Full sound design, mixing and mastered by Dystopic Sound.',
         },
         {
-          title: 'Sound Design of: Memories of the meadow FINAL scene',
-          description: 'Sound design from scratch for a movie scene, hired by a Fiverr client.',
-        },
-        {
-          title: 'Cinematic Soundtrack for Nature Documentary',
-          description: 'Original score and immersive sound design for a feature-length nature documentary.',
-        },
-        {
-          title: 'Predator Fight Scene – Cinematic Sound Design & Original Score',
-          description:
-            'Original sound design and custom soundtrack created for a fight scene from Predator: Killers of Killers.',
-        },
-      ],
-    },
-    whyUs: {
-      eyebrow: 'Why Dystopic Sound',
-      heading: 'Built For Storytellers',
-      items: [
-        {
-          title: 'Story-Driven Composition',
-          description: 'Music designed to support narrative and emotion — never decoration for its own sake.',
-        },
-        {
-          title: 'Industry Standard Workflow',
-          description:
-            'Professional production using modern cinematic tools and deliverables your team already works with.',
-        },
-        {
-          title: 'Built for Directors & Producers',
-          description: 'A collaborative approach focused on fast turnarounds and production-ready audio, every time.',
+          line1: 'No Easy Way Out — Film directed by M. Legend Brown',
+          line2: 'Full sound design, mixing and mastered by Dystopic Sound.',
         },
       ],
     },
@@ -171,44 +141,14 @@ export const translations = {
     projects: {
       eyebrow: 'Proyectos Seleccionados',
       heading: 'Trabajos Destacados',
-      watchVideo: 'Ver Video',
       items: [
         {
-          title: 'Rediseñé este comercial de YPF 🇦🇷 ⭐',
-          description:
-            'En este proyecto realicé un rediseño sonoro de un comercial de YPF, creando una banda sonora original y un nuevo diseño de sonido con un enfoque cinematográfico. 🎧',
+          line1: 'Al Nabbash — Cortometraje dirigido por Omar Al Omeeri',
+          line2: 'Diseño de sonido completo, mezcla y masterización por Dystopic Sound.',
         },
         {
-          title: 'Sound Design of: Memories of the meadow FINAL scene',
-          description: 'Diseño de sonido desde cero para una escena de película, encargado por un cliente de Fiverr.',
-        },
-        {
-          title: 'Banda Sonora Cinematográfica para Documental de Naturaleza',
-          description: 'Música original y diseño de sonido inmersivo para un documental de naturaleza de larga duración.',
-        },
-        {
-          title: 'Escena de Pelea de Predator – Diseño de Sonido Cinematográfico y Música Original',
-          description:
-            'Diseño de sonido original y banda sonora a medida creados para una escena de pelea de Predator: Killers of Killers.',
-        },
-      ],
-    },
-    whyUs: {
-      eyebrow: 'Por Qué Dystopic Sound',
-      heading: 'Hecho Para Contar Historias',
-      items: [
-        {
-          title: 'Composición Basada en la Historia',
-          description: 'Música diseñada para acompañar la narrativa y la emoción, nunca como simple decoración.',
-        },
-        {
-          title: 'Flujo de Trabajo Profesional',
-          description:
-            'Producción profesional con herramientas cinematográficas modernas y entregables compatibles con el flujo de trabajo de tu equipo.',
-        },
-        {
-          title: 'Pensado para Directores y Productores',
-          description: 'Un enfoque colaborativo centrado en tiempos de entrega rápidos y audio listo para producción, siempre.',
+          line1: 'No Easy Way Out — Película dirigida por M. Legend Brown',
+          line2: 'Diseño de sonido completo, mezcla y masterización por Dystopic Sound.',
         },
       ],
     },

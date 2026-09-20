@@ -4,7 +4,6 @@ import WhoWeAre from './components/WhoWeAre.jsx';
 import Services from './components/Services.jsx';
 import Showreel from './components/Showreel.jsx';
 import SelectedProjects from './components/SelectedProjects.jsx';
-import WhyChooseUs from './components/WhyChooseUs.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -17,7 +16,6 @@ export default function App() {
       <Services />
       <Showreel />
       <SelectedProjects />
-      <WhyChooseUs />
       <Contact />
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Youtube, Instagram, Briefcase, ShoppingBag, Music, Waves, SlidersHorizontal, BookOpen, Cog, Users } from 'lucide-react';
+import { Mail, Linkedin, Youtube, Instagram, Briefcase, ShoppingBag, Music, Waves, SlidersHorizontal } from 'lucide-react';
 
 /* =============================================================================
    Structural / non-text data — icons, links, and video IDs that don't change
@@ -23,13 +23,9 @@ export const SHOWREEL_ITEMS = [
 ];
 
 export const PROJECTS = [
-  { videoId: '6JJrWB3jm8c' },
-  { videoId: 'r2koubwVPsE' },
-  { videoId: 'E0TEhztH3SI' },
-  { videoId: '2oSYDUcXkDo' },
+  { id: 'al-nabbash', poster: '/al-nabbash-poster.webp' },
+  { id: 'no-easy-way-out', poster: '/no-easy-way-out-poster.jpg' },
 ];
-
-export const WHY_US_ICONS = [BookOpen, Cog, Users];
 
 export const NAV_IDS = ['home', 'about', 'services', 'showreel', 'projects', 'contact'];
 
