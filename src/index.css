@@ -115,8 +115,6 @@ section[id] {
   background: rgba(27, 53, 42, 0.3);
 }
 
-.hero-heading { color: var(--c-cream); font-weight: 700; }
-
 .nav-scrolled {
   background: rgba(9, 9, 9, 0.75);
   backdrop-filter: blur(14px);
@@ -426,10 +424,6 @@ section[id] {
 }
 
 .border-t-hairline { border-top: 1px solid rgba(79, 138, 107, 0.15); }
-
-@media (max-width: 768px) {
-  .hero-heading { line-height: 1.15; }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { transition: none; }

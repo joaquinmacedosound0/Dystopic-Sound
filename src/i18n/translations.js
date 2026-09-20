@@ -16,9 +16,7 @@ export const translations = {
       contact: 'Contact',
     },
     brand: {
-      tagline: ['Cinematic Music', 'Sound Design', 'Audio That Tells Stories'],
-      subtitle:
-        'A cinematic audio production studio crafting original music and immersive sound for film, games, trailers, and television.',
+      subtitle: 'Cinematic music & Sound post-production studio for media',
       ctaPrimary: 'View Our Work',
       ctaSecondary: 'Work With Us',
     },
@@ -94,9 +92,7 @@ export const translations = {
       contact: 'Contacto',
     },
     brand: {
-      tagline: ['Música Cinematográfica', 'Diseño de Sonido', 'Audio Que Cuenta Historias'],
-      subtitle:
-        'Un estudio de producción de audio cinematográfico que crea música original y sonido inmersivo para cine, videojuegos, trailers y televisión.',
+      subtitle: 'Estudio de música cinematográfica y post-producción de sonido para medios',
       ctaPrimary: 'Ver Nuestro Trabajo',
       ctaSecondary: 'Trabajá Con Nosotros',
     },
