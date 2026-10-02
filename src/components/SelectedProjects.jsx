@@ -11,7 +11,9 @@ function ProjectCard({ project, delay }) {
         </div>
         <div className="pt-6 text-center">
           <p className="font-body text-stone text-sm leading-relaxed mb-2">{project.line1}</p>
-          <p className="font-body text-stone-dim text-xs leading-relaxed">{project.line2}</p>
+          {project.line2 && (
+            <p className="font-body text-stone-dim text-xs leading-relaxed">{project.line2}</p>
+          )}
         </div>
       </div>
     </Reveal>
@@ -35,7 +37,7 @@ export default function SelectedProjects() {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl">{t.projects.heading}</h2>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 gap-10 md:gap-14 justify-items-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 justify-items-center">
           {projects.map((project, i) => (
             <ProjectCard key={project.id} project={project} delay={i * 100} />
           ))}

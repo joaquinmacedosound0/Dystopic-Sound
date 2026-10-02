@@ -67,8 +67,11 @@ export const translations = {
           line2: 'Full sound design, mixing and mastered by Dystopic Sound.',
         },
         {
+          line1: 'Full sound design, Original Music, Mixed & mastered by Joaquin Macedo.',
+        },
+        {
           line1: 'No Easy Way Out — Film directed by M. Legend Brown',
-          line2: 'Full sound design, mixing and mastered by Dystopic Sound.',
+          line2: 'Full sound design, mixed and mastered by Joaquin Macedo & Manuel Padilla.',
         },
       ],
     },
@@ -143,8 +146,11 @@ export const translations = {
           line2: 'Diseño de sonido completo, mezcla y masterización por Dystopic Sound.',
         },
         {
+          line1: 'Diseño de sonido completo, música original, mezclado y masterizado por Joaquín Macedo.',
+        },
+        {
           line1: 'No Easy Way Out — Película dirigida por M. Legend Brown',
-          line2: 'Diseño de sonido completo, mezcla y masterización por Dystopic Sound.',
+          line2: 'Diseño de sonido completo, mezclado y masterizado por Joaquín Macedo y Manuel Padilla.',
         },
       ],
     },

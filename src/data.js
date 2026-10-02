@@ -24,6 +24,7 @@ export const SHOWREEL_ITEMS = [
 
 export const PROJECTS = [
   { id: 'al-nabbash', poster: '/al-nabbash-poster.webp' },
+  { id: 'punto-de-rocio', poster: '/punto-de-rocio-poster.jpg' },
   { id: 'no-easy-way-out', poster: '/no-easy-way-out-poster.jpg' },
 ];
 
