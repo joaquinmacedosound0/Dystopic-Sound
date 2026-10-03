@@ -67,7 +67,8 @@ export const translations = {
           line2: 'Full sound design, mixing and mastered by Dystopic Sound.',
         },
         {
-          line1: 'Full sound design, Original Music, Mixed & mastered by Joaquin Macedo.',
+          line1: 'Punto de rocío — Shortfilm directed by Bautista Vega',
+          line2: 'Full sound design, Original Music, Mixed & mastered by Joaquin Macedo.',
         },
         {
           line1: 'No Easy Way Out — Film directed by M. Legend Brown',
@@ -146,7 +147,8 @@ export const translations = {
           line2: 'Diseño de sonido completo, mezcla y masterización por Dystopic Sound.',
         },
         {
-          line1: 'Diseño de sonido completo, música original, mezclado y masterizado por Joaquín Macedo.',
+          line1: 'Punto de rocío — Cortometraje dirigido por Bautista Vega',
+          line2: 'Diseño de sonido completo, música original, mezclado y masterizado por Joaquín Macedo.',
         },
         {
           line1: 'No Easy Way Out — Película dirigida por M. Legend Brown',
