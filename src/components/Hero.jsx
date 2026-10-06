@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Disc3, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { scrollToId } from '../data.js';
 import { useLanguage } from '../i18n/LanguageContext.jsx';
 import ParticleField from './ParticleField.jsx';
@@ -25,9 +25,7 @@ export default function Hero() {
         } relative z-10 max-w-4xl mx-auto px-6 text-center flex flex-col items-center`}
       >
         <div className="flex flex-col items-center mb-8">
-          <div className="logo-ring mb-4">
-            <Disc3 size={26} strokeWidth={1.25} className="accent-text" />
-          </div>
+          <img src="/logo.png" alt="Dystopic Sound" className="logo-mark mb-4" />
           <span className="wordmark text-base md:text-lg" style={{ letterSpacing: '0.3em' }}>
             DYSTOPIC <span className="accent-text">SOUND</span>
           </span>

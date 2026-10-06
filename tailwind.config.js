@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        void: '#090909',
-        abyss: '#101714',
-        forest: '#1B352A',
-        accent: '#4F8A6B',
-        cream: '#EDEAE3',
-        stone: '#B7C0BA',
-        'stone-dim': '#7C8985',
+        void: '#05080D',
+        abyss: '#0A0F1C',
+        forest: '#16223B',
+        accent: '#4F7FBF',
+        cream: '#EDEFF5',
+        stone: '#B8C2D9',
+        'stone-dim': '#7C8699',
       },
       fontFamily: {
         heading: ['Cinzel', 'serif'],
